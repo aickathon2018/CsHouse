@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<HTML>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+ <link rel="stylesheet" href="Design.css">
+	<head></head>
+	<body>
+    <div class = "image"> </div>
+    <img class = "center" src="logo.png" width="500" height="80" alt=""/>
+	
+	<div class = "video">
+	  <video class = "center" id="video" width="800" height="480" autoplay "></video>
+    </div>
+	<button class ="center" id="snap">Snap Photo</button>
+	 <div>
+	  <canvas class = "center" id="canvas" width="0" height="0"></canvas>
+	</div>
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCwiX2I28VR1ILoIPDNyMWqNNuTgCXn9Jk",
+		authDomain: "aickathon-cb022.firebaseapp.com",
+		databaseURL: "https://aickathon-cb022.firebaseio.com",
+		projectId: "aickathon-cb022",
+		storageBucket: "",
+		messagingSenderId: "15073857780"
+	};
+	firebase.initializeApp(config);
+	</script>
+	<script src = "capture.js"></script>
+	<script src = "jq.js"></script>
+	
+</HTML>	
+		
